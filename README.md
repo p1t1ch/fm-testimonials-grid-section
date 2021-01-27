@@ -1,4 +1,4 @@
-# Frontend Mentor: Profile card component
+# Frontend Mentor: Testimonials grid section
 
 <p align="center"><strong align="center">My solution for Frontend Mentor <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">Testimonials grid section</a> challenge</strong></p>
 
