@@ -5,7 +5,7 @@ interface TestimonialCardProps extends React.HTMLProps<HTMLDivElement> {
   name: string
   heading: string
   children: React.ReactNode
-  type?: 'purple' | 'gray' | 'black' | 'white'
+  theme?: 'purple' | 'gray' | 'black' | 'white'
 }
 
 function TestimonialCard({
@@ -13,19 +13,62 @@ function TestimonialCard({
   name,
   heading,
   children,
-  type = 'white',
+  theme = 'white',
   className = '',
   ...props
 }: TestimonialCardProps) {
   return (
-    <article className={`${className}`} {...props}>
-      <img src={avatar} alt={`${name}'s avatar`} />
+    <article
+      className={`p-8 pt-6 grid grid-cols-card gap-4 place-content-start h-full rounded-lg shadow ${
+        theme === 'purple'
+          ? 'bg-primary-purple'
+          : theme === 'gray'
+          ? 'bg-primary-grayish-blue'
+          : theme === 'black'
+          ? 'bg-primary-blackish-blue'
+          : 'bg-primary'
+      } ${
+        theme === 'purple' ? 'bg-quotation bg-no-repeat bg-quotation-mobile sm:bg-quotation-desktop' : ''
+      } ${className}`}
+      {...props}
+    >
+      <img
+        src={avatar}
+        alt={`${name}'s avatar`}
+        className={`rounded-full border-2 ${
+          theme === 'purple'
+            ? 'border-primary-purple-light'
+            : theme === 'black'
+            ? 'border-primary-purple'
+            : 'border-transparent'
+        }`}
+      />
       <div>
-        <div>{name}</div>
-        <div>Verified Graduate</div>
+        <div className={`${theme === 'white' ? 'text-primary-grayish-blue' : 'text-primary'} mb-1 leading-none`}>
+          {name}
+        </div>
+        <div
+          className={`${
+            theme === 'white' ? 'text-primary-grayish-blue' : 'text-primary'
+          } text-opacity-50 text-extrasmall`}
+        >
+          Verified Graduate
+        </div>
       </div>
-      <h2>{heading}</h2>
-      <p>“ {children} ”</p>
+      <h2
+        className={`col-span-full text-xl ${
+          theme === 'white' ? 'text-primary-grayish-blue' : 'text-primary'
+        } font-semibold`}
+      >
+        {heading}
+      </h2>
+      <p
+        className={`col-span-full ${
+          theme === 'white' ? 'text-primary-grayish-blue' : theme === 'purple' ? 'text-neutral' : 'text-primary'
+        } text-opacity-70`}
+      >
+        “ {children} ”
+      </p>
     </article>
   )
 }

@@ -16,9 +16,9 @@ const config = {
   // Path to main favicon. Recommended size: 512x512. Other sizes are generated automatically
   favicon: 'src/images/favicon.png',
   // Theme color. Used as color of device toolbar in supported browsers
-  themeColor: '#fff',
+  themeColor: '#ECF2F8',
   // Background color. Used as background on PWA launch screen. Recommended to make it the same as body color
-  backgroundColor: '#fff',
+  backgroundColor: '#ECF2F8',
 }
 
 module.exports = {
