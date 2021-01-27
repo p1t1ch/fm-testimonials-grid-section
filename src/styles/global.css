@@ -8,7 +8,7 @@
   }
 
   body {
-    @apply text-normal font-medium bg-neutral text-neutral-blue;
+    @apply text-normal font-medium bg-neutral-blue text-neutral;
   }
 }
 
