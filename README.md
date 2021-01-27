@@ -1,11 +1,11 @@
 # Frontend Mentor: Profile card component
 
-<p align="center"><strong align="center">My solution for Frontend Mentor <a href="https://www.frontendmentor.io/challenges/single-price-grid-component-5ce41129d0ff452fec5abbbc">Testimonials grid section</a> challenge</strong></p>
+<p align="center"><strong align="center">My solution for Frontend Mentor <a href="https://www.frontendmentor.io/challenges/testimonials-grid-section-Nnw6J7Un7">Testimonials grid section</a> challenge</strong></p>
 
 <p align="center">
   <a href="https://app.netlify.com/sites/p1t1ch-fm-testimonials-grid-section/deploys">
     <img
-      src="https://api.netlify.com/api/v1/badges/289355cc-ded7-49d3-a4a9-945f60bcc799/deploy-status"
+      src="https://api.netlify.com/api/v1/badges/9355ee2e-2dbc-4f83-a47b-7e6d7cab2672/deploy-status"
       alt="Netlify Status"
     />
   </a>
